@@ -7,9 +7,11 @@ export const profile = {
   firstName: 'Muaz',
   lastName: 'Ramzi',
   role: 'Full-Stack Developer / Software Engineer / Frontend Developer / Backend Developer / Mobile Developer / AI Enthusiast / Machine Learning / Data Science',
-  tagline:
-    'From ideas to real-world applications.',
-  status: 'available for internship 3 aug 2026 – 15 jan 2027',
+  tagline: 'Building Software. Solving Real Problems.',
+  intro:
+    "I'm a final-year IT student with hands-on software development experience, interested in building reliable applications and solving real-world problems. I'm looking forward to contributing my skills and growing as a software engineer.",
+  badge: 'Backend intern · Secure LabX',
+  status: 'Open to full-time roles after Jan 2027',
   email: 'muazramzi.123@gmail.com', 
   phone: '+60 18 9199 054', // EDIT: your real phone
   phoneLink: 'https://wa.link/wzm6bq',
@@ -23,16 +25,16 @@ export const profile = {
 }
 
 export const heroStats = [
-  { value: 5, suffix: '+', label: 'Shipped projects' },
+  { value: 5, suffix: '+', label: 'Projects built' },
   { value: 3.34, decimals: 2, label: "CGPA " },
-  { value: 2, suffix: '', label: 'Live in production' },
+  { value: 4, suffix: '', label: 'Live deployments' },
 ]
 
 export const facts = [
   { big: 'UTHM', small: 'FSKTM · IT (Hons)' },
   { big: 'Batu Pahat', small: 'Johor, Malaysia' },
   { big: 'EN / BM', small: 'Fluent, both' },
-  { big: 'Aug 2026', small: 'Internship ready' },
+  { big: 'Jan 2027', small: 'Open to full-time roles' },
 ]
 
 export const education = [
@@ -47,45 +49,50 @@ export const education = [
     detail: 'Solo-built and deployed a PHP/MySQL MVC web app for faculty research tracking.',
   },
   {
-    year: 'Aug 2026 -Jan 2027',
-    title: 'Internship',
-    tag: 'seeking',
-    detail: 'Open to software engineering, web developer, software tester roles and Data Analytics.',
+    year: '3 Aug 2026 – 15 Jan 2027',
+    title: 'Internship · Secure LabX Sdn. Bhd.',
+    tag: 'current',
+    detail: 'Assistant Software Engineer (Backend Developer).',
+  },
+  {
+    year: 'Aug 2019 – Feb 2022',
+    title: 'Diploma in Information Technology (Technology Digital)',
+    detail: 'Politeknik Ungku Omar · First Class Honours.',
   },
 ]
 
 export const skills = [
-  { icon: 'Code2', title: 'Frontend', note: '// interface & experience', items: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'HTML5', 'CSS3', 'JavaScript'] },
-  { icon: 'Server', title: 'Backend', note: '// logic & APIs', items: ['Node.js', 'Express', 'PHP', 'REST APIs', 'JWT Auth', 'Prisma'] },
-  { icon: 'Smartphone', title: 'Mobile', note: '// cross-platform', items: ['Flutter', 'Dart'] },
-  { icon: 'Database', title: 'Database', note: '// data & design', items: ['MySQL', 'PostgreSQL', 'SQL', 'ERD / Normalization', 'Prisma ORM'] },
-  { icon: 'Wrench', title: 'Tools & Platforms', note: '// ship & maintain', items: ['Git / GitHub', 'VS Code', 'Hostinger', 'Railway', 'Vite', 'XAMPP'] },
-  { icon: 'BrainCircuit', title: 'AI / ML', note: '// applied', items: ['OpenAI GPT-4o', 'SAS Viya', 'Classification', 'Model Eval'] },
+  { icon: 'Server', title: 'Backend & API Development', note: '// logic & APIs', items: ['PHP', 'Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'Prisma'] },
+  { icon: 'Database', title: 'Database Management', note: '// data & design', items: ['MySQL', 'PostgreSQL', 'SQL', 'Supabase', 'Firebase', 'ERD / Normalization'] },
+  { icon: 'Smartphone', title: 'Frontend & Mobile', note: '// interfaces & apps', items: ['React', 'Next.js', 'Tailwind', 'HTML5', 'CSS3', 'Flutter'] },
+  { icon: 'Code2', title: 'Programming Languages', note: '// day to day', items: ['JavaScript', 'TypeScript', 'PHP', 'Python', 'Java', 'C++', 'Dart'] },
+  { icon: 'Wrench', title: 'Development Tools', note: '// build & maintain', items: ['Git', 'GitHub', 'VS Code', 'Vite', 'XAMPP', 'Hostinger', 'Railway'] },
+  { icon: 'BrainCircuit', title: 'Data & AI', note: '// analytics & applied ML', items: ['Power BI', 'SAS Viya', 'Classification', 'Model Eval', 'OpenAI GPT-4o'] },
 ]
 
 export const marquee = [
-  'React', 'Next.js', 'TypeScript', 'Node.js', 'Express', 'PHP', 'MySQL', 'PostgreSQL',
-  'Prisma', 'Tailwind', 'Flutter', 'Dart', 'Framer Motion', 'Git', 'Vite', 'JWT', 'GPT-4o',
+  'Node.js', 'Express.js', 'PHP', 'MySQL', 'PostgreSQL', 'Supabase', 'Python', 'React', 'Next.js',
+  'TypeScript', 'Flutter', 'Dart', 'Power BI', 'Prisma', 'Tailwind', 'Git', 'GitHub', 'Vite', 'JWT',
 ]
 
 export const experience = [
   {
-    title: 'Software Engineering Intern',
-    tag: 'upcoming',
-    company: 'Open - seeking a host company',
-    when: 'Aug 2026 - Jan 2027',
+    title: 'Assistant Software Engineer (Backend Developer)',
+    tag: 'internship',
+    company: 'Secure LabX Sdn. Bhd.',
+    when: '3 Aug 2026 – 15 Jan 2027',
     points: [
-      'Available full-time for a 6-month internship window.',
-      'Targeting software engineering, web development, and QA / software testing roles.',
+      // TODO(Muaz): add your real responsibilities and the technologies you use here. Left short on purpose so nothing is invented.
+      'Internship placement in a backend development role.',
     ],
   },
   {
     title: 'Final Year Project - Solo Developer',
     company: 'ARAMS · UTHM FSKTM',
-    when: '2026',
+    when: '2025 – 2026',
     points: [
       'Designed and built a PHP/MySQL MVC web app for faculty research monitoring, serving three user roles.',
-      'Deployed to production on Hostinger (arams.site) with analytics dashboards, KPI tracking and PDF reporting.',
+      'Deployed on Hostinger (arams.site) with analytics dashboards, KPI tracking and PDF reporting.',
       'Implemented role-based access, security hardening and historical faculty-transfer attribution.',
     ],
   },
@@ -104,7 +111,7 @@ export const experience = [
     when: '2024 — 2026',
     points: [
       'Built a React + Node inventory system with atomic stock transactions and JWT auth.',
-      'Shipped an AI meal-monitoring tool, a study planner and a Flutter password manager.',
+      'Built an AI meal-monitoring tool, a study planner (live demo on Railway) and a Flutter password manager.',
     ],
   },
 ]
@@ -119,8 +126,8 @@ export const projects = [
     img: '/projects/arams/uthm-logo.png',
     imgFit: 'contain',
     imgBg: '#ffffff',
-    short: 'A research performance monitoring system for university faculty — live in production.',
-    desc: 'ARAMS is my final-year project: a PHP/MySQL MVC web application that lets a faculty track research output across three user roles (Lecturer, TDPP, Admin). It is deployed and running in production on Hostinger.',
+    short: 'A research performance monitoring system for university faculty, built as my final-year project.',
+    desc: 'A faculty needs one place to track lecturer research output and report on research performance. For my final-year project I designed and built ARAMS, a PHP/MySQL MVC web application for this, with three user roles (Lecturer, TDPP, Admin). It is deployed on Hostinger.',
     tech: ['PHP', 'MySQL', 'JavaScript', 'MVC', 'Hostinger'],
     features: [
       'Tracks publications, grants, h-index, IP and research income',
@@ -140,7 +147,7 @@ export const projects = [
     title: 'Smart Inventory System',
     img: '/projects/smart-inventory/login.png',
     short: 'Full-stack inventory platform with atomic stock transactions and reversal.',
-    desc: 'A school / small-business inventory system built from scratch across 11 modules. The core challenge was safe concurrent stock movement — solved with atomic transactions using row-level locking.',
+    desc: 'An inventory system for schools and small businesses that I built from scratch across 11 modules. The main challenge was keeping stock correct when several users move stock at the same time, which I handled with atomic transactions and row-level locking.',
     tech: ['React', 'Vite', 'Tailwind', 'Node.js', 'Express', 'MySQL', 'JWT'],
     features: [
       'Role-based access for Admin and Staff',
@@ -159,12 +166,12 @@ export const projects = [
     catLabel: 'AI / ML · Web',
     title: 'NutriScan Clinical',
     short: 'Hospital meal-monitoring tool with AI food recognition via GPT-4o vision.',
-    desc: 'A clinical meal-monitoring system for three roles (Nurse, Dietitian, Admin) that uses GPT-4o vision to recognise food from photos and track patient nutrition over time.',
+    desc: 'A meal-monitoring system for hospital wards with three roles (Nurse, Dietitian, Admin). Nurses photograph a meal tray, GPT-4o vision recognises the food and estimates portions, and dietitians follow intake over time through dashboards and low-intake alerts.',
     tech: ['Next.js 14', 'TypeScript', 'PostgreSQL', 'Prisma', 'NextAuth', 'GPT-4o', 'Recharts'],
     features: [
       'AI food recognition from meal photos',
       'Three-role access: Nurse, Dietitian, Admin',
-      'Nutrition analytics with Recharts',
+      'Nutrition analytics and low-intake alerts, charted with Recharts',
       'Clean glassmorphism login and dashboard UI',
       'Type-safe data layer with Prisma',
     ],
@@ -179,7 +186,7 @@ export const projects = [
     title: 'Smart Study Planner',
     img: '/projects/smart-study-planner/light-mode.png',
     short: 'A full-stack study board for students juggling several subjects at once — live on Railway.',
-    desc: 'A Node/Express + vanilla JS study task manager for students tracking coursework across several subjects at once. Subjects are colour-coded, tasks carry deadlines and priority, and a sidebar makes overall progress and this week\'s completions visible at a glance instead of guessed at.',
+    desc: 'Students who study several subjects at once can easily lose track of what is due. I built this task manager with Node/Express and vanilla JavaScript: colour-coded subjects, deadlines and priorities, a progress sidebar with a 7-day chart, deadline reminders and recurring tasks. Data is stored in a JSON file, so the live demo is for trying the app, not for long-term data.',
     tech: ['Node.js', 'Express', 'HTML5', 'CSS3', 'JavaScript', 'Railway'],
     features: [
       'Colour-coded subjects with live search and one-click priority/status filters',
@@ -200,13 +207,14 @@ export const projects = [
     img: '/projects/password-manager/logo.png',
     imgFit: 'contain',
     imgBg: '#1a56b8',
-    short: 'A cross-platform password manager built with Flutter.',
-    desc: 'A mobile app for securely storing and managing credentials, built with Flutter and Dart to run on both Android and iOS from a single codebase.',
-    tech: ['Flutter', 'Dart'],
+    short: 'A Flutter password manager with client-side AES-256 encryption.',
+    desc: 'A mobile vault for website and app credentials. It started as a group diploma final-year project (Politeknik Ungku Omar, 2021) and was rebuilt in 2026 on Supabase, with passwords encrypted on the device so the backend only stores ciphertext. It is installed as an Android APK from GitHub Releases and is not on the Play Store.',
+    tech: ['Flutter', 'Dart', 'Supabase', 'AES-256', 'PostgreSQL'],
     features: [
-      'Securely store and organise credentials',
-      'Cross-platform from one Flutter codebase',
-      'Clean, simple mobile-first UI',
+      'Register and log in, then keep credentials in an encrypted vault',
+      'AES-256 encryption on the device, keyed from the login password with PBKDF2',
+      'Supabase (Postgres + Auth) with Row Level Security',
+      'Original diploma version used a PHP/MySQL backend that no longer runs',
     ],
     live: '',
     repo: 'https://github.com/muazramzii/password-manager',
@@ -273,7 +281,7 @@ export const projects = [
     cats: [],
     catLabel: 'Game Development',
     title: 'MoveRush',
-    short: 'A three-lane endless runner built in Unity with a clean, testable architecture.',
+    short: 'A three-lane endless runner built in Unity (in progress).',
     desc: 'A Unity 6 LTS endless runner built phase by phase: a foundation layer (state machine, boot flow, JSON save, config assets) followed by the runner core — three-lane movement, jump/slide, coin and obstacle pooling, an infinite world, scaling difficulty and Cinemachine camera work.',
     tech: ['Unity 6', 'C#', 'URP', 'Cinemachine', 'Input System'],
     features: [
@@ -318,7 +326,7 @@ export const filters = [
 
 export const certifications = [
   { icon: 'Award', title: "Dean's List Recognition", issuer: 'UTHM · FSKTM', desc: 'Awarded for academic performance during the undergraduate programme.' },
-  { icon: 'CheckCircle2', title: 'ARAMS in Production', issuer: 'Live · arams.site', desc: 'Solo-built a full research monitoring system and deployed it to a live production server.' },
+  { icon: 'CheckCircle2', title: 'ARAMS Deployed', issuer: 'Live · arams.site', desc: 'Solo-built a full research monitoring system and deployed it to a live server.' },
   { icon: 'BarChart3', title: 'CGPA 3.34', issuer: 'Bachelor of IT (Hons)', desc: 'Consistent academic standing across a full-stack and software engineering curriculum.' },
-  { icon: 'FileText', title: 'Your Certification', issuer: 'Add issuer · year', desc: 'Replace this card with a real certificate, course or competition you have completed.' },
+  { icon: 'Award', title: 'Diploma — First Class Honours', issuer: 'Politeknik Ungku Omar', desc: 'Completed the Diploma in Information Technology (Technology Digital) with First Class Honours.' },
 ]

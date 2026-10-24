@@ -11,7 +11,7 @@ export default function Skills() {
         <div className="mb-13 max-w-[640px]" style={{ marginBottom: 52 }}>
           <Reveal><span className="eyebrow">02 — Skills</span></Reveal>
           <Reveal delay={0.05}><h2 className="mt-4 text-[clamp(1.9rem,4.4vw,3rem)]">The stack I build with</h2></Reveal>
-          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Hands-on tools from projects I've actually shipped — not just a list of buzzwords.</p></Reveal>
+          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Technologies I've used in my projects and studies, grouped by area.</p></Reveal>
         </div>
 
         <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-3">

@@ -63,8 +63,12 @@ export default function Hero() {
             Full-Stack Developer <span className="text-accent">/</span> Software Engineer
           </motion.p>
 
-          <motion.p variants={item} className="mt-5 max-w-[480px] text-[1.1rem] text-muted">
+          <motion.p variants={item} className="mt-5 max-w-[480px] font-display text-[1.25rem] font-medium text-strong">
             {profile.tagline}
+          </motion.p>
+
+          <motion.p variants={item} className="mt-3 max-w-[480px] text-[1.05rem] text-muted">
+            {profile.intro}
           </motion.p>
 
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-3.5">
@@ -108,7 +112,7 @@ export default function Hero() {
             className="absolute -bottom-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full px-4 py-2 font-mono text-[0.76rem]"
             style={{ background: 'var(--glass)', backdropFilter: 'blur(10px)', border: '1px solid var(--border-strong)' }}
           >
-            <Code2 size={13} className="mr-1.5 inline text-accent" /> Building at UTHM
+            <Code2 size={13} className="mr-1.5 inline text-accent" /> {profile.badge}
           </div>
         </motion.div>
       </div>
