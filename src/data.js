@@ -10,7 +10,7 @@ export const profile = {
   tagline: 'Building Software. Solving Real Problems.',
   intro:
     "I'm a final-year IT student with hands-on software development experience, interested in building reliable applications and solving real-world problems. I'm looking forward to contributing my skills and growing as a software engineer.",
-  badge: 'Backend intern · Secure LabX',
+  badge: 'Full-stack intern · Secure LabX',
   status: 'Open to full-time roles after Jan 2027',
   email: 'muazramzi.123@gmail.com', 
   phone: '+60 18 9199 054', // EDIT: your real phone
@@ -52,7 +52,7 @@ export const education = [
     year: '3 Aug 2026 – 15 Jan 2027',
     title: 'Internship · Secure LabX Sdn. Bhd.',
     tag: 'current',
-    detail: 'Assistant Software Engineer (Backend Developer).',
+    detail: 'Full-Stack Developer Intern.',
   },
   {
     year: 'Aug 2019 – Feb 2022',
@@ -62,28 +62,34 @@ export const education = [
 ]
 
 export const skills = [
-  { icon: 'Server', title: 'Backend & API Development', note: '// logic & APIs', items: ['PHP', 'Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'Prisma'] },
-  { icon: 'Database', title: 'Database Management', note: '// data & design', items: ['MySQL', 'PostgreSQL', 'SQL', 'Supabase', 'Firebase', 'ERD / Normalization'] },
-  { icon: 'Smartphone', title: 'Frontend & Mobile', note: '// interfaces & apps', items: ['React', 'Next.js', 'Tailwind', 'HTML5', 'CSS3', 'Flutter'] },
+  { icon: 'Server', title: 'Backend & API Development', note: '// logic & APIs', items: ['Node.js', 'LoopBack 4', 'Express.js', 'PHP', 'REST APIs', 'OpenAPI', 'JWT Auth', 'Prisma'] },
+  { icon: 'Database', title: 'Database Management', note: '// data & design', items: ['MySQL', 'MariaDB', 'PostgreSQL', 'SQL', 'Supabase', 'Firebase', 'ERD / Normalization'] },
+  { icon: 'Smartphone', title: 'Frontend & Mobile', note: '// interfaces & apps', items: ['React', 'Redux', 'Next.js', 'CoreUI Pro', 'SCSS', 'Tailwind', 'HTML5', 'CSS3', 'Flutter'] },
   { icon: 'Code2', title: 'Programming Languages', note: '// day to day', items: ['JavaScript', 'TypeScript', 'PHP', 'Python', 'Java', 'C++', 'Dart'] },
-  { icon: 'Wrench', title: 'Development Tools', note: '// build & maintain', items: ['Git', 'GitHub', 'VS Code', 'Vite', 'XAMPP', 'Hostinger', 'Railway'] },
+  { icon: 'Wrench', title: 'Development Tools', note: '// build & maintain', items: ['Git', 'GitHub', 'Docker', 'GitLab CI/CD', 'Puppeteer', 'VS Code', 'Vite', 'XAMPP', 'Hostinger', 'Railway'] },
   { icon: 'BrainCircuit', title: 'Data & AI', note: '// analytics & applied ML', items: ['Power BI', 'SAS Viya', 'Classification', 'Model Eval', 'OpenAI GPT-4o'] },
 ]
 
 export const marquee = [
-  'Node.js', 'Express.js', 'PHP', 'MySQL', 'PostgreSQL', 'Supabase', 'Python', 'React', 'Next.js',
-  'TypeScript', 'Flutter', 'Dart', 'Power BI', 'Prisma', 'Tailwind', 'Git', 'GitHub', 'Vite', 'JWT',
+  'Node.js', 'LoopBack 4', 'Express.js', 'PHP', 'MySQL', 'MariaDB', 'PostgreSQL', 'Supabase', 'Python', 'React',
+  'Next.js', 'TypeScript', 'Flutter', 'Dart', 'Power BI', 'Prisma', 'Tailwind', 'Docker', 'GitLab CI/CD', 'Git', 'GitHub', 'JWT',
 ]
 
 export const experience = [
   {
-    title: 'Assistant Software Engineer (Backend Developer)',
+    title: 'Full-Stack Developer Intern',
     tag: 'internship',
     company: 'Secure LabX Sdn. Bhd.',
     when: '3 Aug 2026 – 15 Jan 2027',
     points: [
-      // TODO(Muaz): add your real responsibilities and the technologies you use here. Left short on purpose so nothing is invented.
-      'Internship placement in a backend development role.',
+      'Work on different parts of the project, including database, API, and frontend development.',
+      'Develop and maintain REST APIs using Node.js, TypeScript, LoopBack 4, and MySQL/MariaDB.',
+      'Implement JWT authentication, role-based access control, and OpenAPI documentation.',
+      'Create database migrations and test them using a copy of the production database.',
+      'Build responsive, bilingual (BM/EN) user interfaces using React, TypeScript, Vite, Redux, and CoreUI Pro.',
+      'Generate PDF reports using Puppeteer and work on email services, system integrations, and audit logging.',
+      'Use Docker and GitLab CI/CD to prepare releases and manage staging environments.',
+      'Investigate software issues by checking logs, API responses, and database records.',
     ],
   },
   {

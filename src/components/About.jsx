@@ -13,7 +13,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[1.05rem] text-muted">
-             I'm Muaz, a final-year IT student at UTHM. I'm currently doing my internship at Secure LabX as an Assistant Software Engineer, working in backend development.
+             I'm Muaz, a final-year IT student at UTHM. I'm currently doing my internship at Secure LabX as a full-stack developer. I started on the backend and now work on both the backend and the frontend of my project.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
