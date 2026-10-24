@@ -13,22 +13,22 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[1.05rem] text-muted">
-             I'm Muaz, a final-year IT student at UTHM with interests in software engineering, data analytics, and artificial intelligence.
+             I'm Muaz, a final-year IT student at UTHM. I'm currently doing my internship at Secure LabX as an Assistant Software Engineer, working in backend development.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-4 text-[1.05rem] text-muted">
-              I enjoy developing full-stack applications as well as working with data using Python, machine learning, and AI techniques. I like transforming ideas and data into practical solutions that create real impact.
+              Most of what I know comes from building projects: a research monitoring system for my final-year project, an inventory system, a study planner and a few mobile apps. My work so far uses PHP, Node.js, MySQL and PostgreSQL, and I like picking up new tools and working through problems step by step.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-4 text-[1.05rem] text-muted">
-             My projects range from production-ready web applications to data-driven systems, reflecting my passion for continuous learning and problem-solving.
+             I'm interested in backend development, databases, software testing and data analytics, and I'm still learning how to build software that is reliable and easy to maintain.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-4 text-[1.05rem] text-muted">
-             Currently seeking internship opportunities in Software Engineering, Web Development, QA Testing, Data Analytics, or AI-related roles.
+             My internship ends on 15 January 2027. After that, I'm looking for a full-time role in software engineering, backend or database development, software testing or data analytics.
             </p>
           </Reveal>
 

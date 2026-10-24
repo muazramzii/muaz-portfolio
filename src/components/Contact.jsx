@@ -72,15 +72,15 @@ export default function Contact() {
         <div className="mx-auto mb-13 max-w-[640px] text-center" style={{ marginBottom: 52 }}>
           <Reveal><span className="eyebrow" style={{ display: 'inline-flex' }}>06 — Contact</span></Reveal>
           <Reveal delay={0.05}><h2 className="mt-4 text-[clamp(1.9rem,4.4vw,3rem)]">Let's build something</h2></Reveal>
-          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Looking for an intern who ships? I'd love to hear from you.</p></Reveal>
+          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Open to full-time roles, recruiter enquiries and relevant collaborations.</p></Reveal>
         </div>
 
         <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
             <h3 className="text-[1.4rem]">Get in touch</h3>
             <p className="mt-3 text-muted">
-              I'm actively looking for a software engineering internship for Aug 2026 – Jan 2027. The fastest way to reach me
-              is email or LinkedIn.
+              I'm doing my internship at Secure LabX until 15 January 2027 and will be open to full-time opportunities after that.
+              If you're hiring or would like to talk about a project, email or LinkedIn is the fastest way to reach me.
             </p>
             <div className="mt-7 grid gap-3.5">
               {contactList.map((c) => {

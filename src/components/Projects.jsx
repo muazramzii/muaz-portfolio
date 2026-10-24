@@ -17,8 +17,8 @@ export default function Projects() {
       <div className="container-x">
         <div className="mb-13 max-w-[640px]" style={{ marginBottom: 40 }}>
           <Reveal><span className="eyebrow">04 — Selected Work</span></Reveal>
-          <Reveal delay={0.05}><h2 className="mt-4 text-[clamp(1.9rem,4.4vw,3rem)]">Projects I've shipped</h2></Reveal>
-          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">A mix of production apps, academic builds and experiments. Click any card for the full breakdown.</p></Reveal>
+          <Reveal delay={0.05}><h2 className="mt-4 text-[clamp(1.9rem,4.4vw,3rem)]">Projects I've built</h2></Reveal>
+          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">A mix of deployed apps, academic builds and personal projects. Click any card for the full breakdown.</p></Reveal>
         </div>
 
         <Reveal delay={0.1}>

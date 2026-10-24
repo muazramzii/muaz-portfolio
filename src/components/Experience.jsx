@@ -8,7 +8,7 @@ export default function Experience() {
         <div className="mx-auto mb-13 max-w-[640px] text-center" style={{ marginBottom: 52 }}>
           <Reveal><span className="eyebrow" style={{ display: 'inline-flex' }}>03 — Experience</span></Reveal>
           <Reveal delay={0.05}><h2 className="mt-4 text-[clamp(1.9rem,4.4vw,3rem)]">Where I've been building</h2></Reveal>
-          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Most of my experience so far is project-driven — real systems, shipped and tested.</p></Reveal>
+          <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">My experience comes from my current internship and from the projects I've built during my studies.</p></Reveal>
         </div>
 
         <div className="relative mx-auto max-w-[760px]">
