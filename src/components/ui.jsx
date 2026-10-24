@@ -20,7 +20,7 @@ export function Reveal({ children, delay = 0, y = 28, className = '', as = 'div'
 // Animated count-up number
 export function CountUp({ value, decimals = 0, suffix = '', text }) {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-40px' })
+  const inView = useInView(ref, { once: true, margin: '-40px 0px' })
   const mv = useMotionValue(0)
   const spring = useSpring(mv, { duration: 1400, bounce: 0 })
 
