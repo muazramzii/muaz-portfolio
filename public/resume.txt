@@ -1,0 +1,2 @@
+Replace this file with your real resume.pdf (named exactly "resume.pdf").
+The Download Resume button points to /resume.pdf.
