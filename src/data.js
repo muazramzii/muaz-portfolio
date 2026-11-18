@@ -39,25 +39,17 @@ export const facts = [
 
 export const education = [
   {
-    year: '2024 - 2027 (expected)',
-    title: 'Bachelor of IT (Hons)',
-    detail: "UTHM · Faculty of Computer Science & IT.",
+    period: '2024 – 2027 (Expected)',
+    qualification: 'Bachelor of Information Technology (Honours)',
+    institution: 'Universiti Tun Hussein Onn Malaysia (UTHM)',
+    achievement: 'CGPA: 3.34',
+    current: true,
   },
   {
-    year: 'Final Year Project',
-    title: 'ARAMS - Research Monitoring System',
-    detail: 'Solo-built and deployed a PHP/MySQL MVC web app for faculty research tracking.',
-  },
-  {
-    year: '3 Aug 2026 – 15 Jan 2027',
-    title: 'Internship · Secure LabX Sdn. Bhd.',
-    tag: 'current',
-    detail: 'Full-Stack Developer Intern.',
-  },
-  {
-    year: 'Aug 2019 – Feb 2022',
-    title: 'Diploma in Information Technology (Technology Digital)',
-    detail: 'Politeknik Ungku Omar · First Class Honours.',
+    period: 'August 2019 – February 2022',
+    qualification: 'Diploma in Information Technology (Technology Digital)',
+    institution: 'Politeknik Ungku Omar (PUO)',
+    achievement: 'First Class Honours',
   },
 ]
 
@@ -77,19 +69,20 @@ export const marquee = [
 
 export const experience = [
   {
-    title: 'Full-Stack Developer Intern',
+    title: 'Assistant Software Engineer (Backend Developer) Intern',
     tag: 'internship',
     company: 'Secure LabX Sdn. Bhd.',
-    when: '3 Aug 2026 – 15 Jan 2027',
+    when: '3 August 2026 – 15 January 2027',
+    summary: 'Working across backend development, frontend implementation and deployment-related workflows, with responsibilities including:',
     points: [
-      'Work on different parts of the project, including database, API, and frontend development.',
-      'Develop and maintain REST APIs using Node.js, TypeScript, LoopBack 4, and MySQL/MariaDB.',
-      'Implement JWT authentication, role-based access control, and OpenAPI documentation.',
-      'Create database migrations and test them using a copy of the production database.',
-      'Build responsive, bilingual (BM/EN) user interfaces using React, TypeScript, Vite, Redux, and CoreUI Pro.',
-      'Generate PDF reports using Puppeteer and work on email services, system integrations, and audit logging.',
-      'Use Docker and GitLab CI/CD to prepare releases and manage staging environments.',
-      'Investigate software issues by checking logs, API responses, and database records.',
+      'Develop and maintain REST APIs using TypeScript, LoopBack 4 and MySQL/MariaDB.',
+      'Independently handle frontend and backend development for an Online Claim System (OCS).',
+      'Build responsive web interfaces using React, TypeScript, Vite and Redux.',
+      'Implement authentication, user access management, complaint tracking and payment claim features.',
+      'Manage database migrations and validate database changes in staging environments.',
+      'Generate PDF reports using Puppeteer and work on email services and system integrations.',
+      'Use Docker and GitLab CI/CD to support application builds, releases and staging deployments.',
+      'Investigate application issues through logs, API responses and database records.',
     ],
   },
   {

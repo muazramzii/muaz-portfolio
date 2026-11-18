@@ -50,19 +50,17 @@ export default function About() {
               <GraduationCap size={18} className="text-accent" /> Education
             </h3>
             {education.map((e, i) => (
-              <div key={e.title} className={`relative pl-6 ${i === education.length - 1 ? '' : 'pb-6'}`}>
-                <span className="absolute left-1 top-1.5 h-2.5 w-2.5 rounded-full" style={{ background: 'var(--accent)', boxShadow: '0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent)' }} />
-                {i !== education.length - 1 && <span className="absolute bottom-0 left-2 top-[18px] w-px" style={{ background: 'var(--border)' }} />}
-                <div className="font-mono text-[0.72rem] tracking-wide text-accent">{e.year}</div>
-                <h4 className="my-1 text-[1rem]">
-                  {e.title}
-                  {e.tag && (
-                    <span className="ml-2 rounded-md px-2 py-0.5 font-mono text-[0.66rem] uppercase tracking-wider" style={{ background: 'color-mix(in srgb, var(--accent) 16%, transparent)', color: 'var(--accent)' }}>
-                      {e.tag}
-                    </span>
-                  )}
-                </h4>
-                <p className="text-[0.88rem] text-muted">{e.detail}</p>
+              <div key={e.qualification} className={`relative pl-7 ${i === education.length - 1 ? '' : 'pb-7'}`}>
+                {e.current ? (
+                  <span className="absolute left-0 top-1.5 h-3 w-3 rounded-full" style={{ background: 'var(--accent)', boxShadow: '0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent)' }} />
+                ) : (
+                  <span className="absolute left-0 top-1.5 h-3 w-3 rounded-full" style={{ background: 'var(--bg)', border: '2px solid var(--muted)' }} />
+                )}
+                {i !== education.length - 1 && <span className="absolute bottom-0 left-[5.5px] top-[22px] w-px" style={{ background: 'var(--border)' }} />}
+                <div className="font-mono text-[0.72rem] tracking-wide text-accent">{e.period}</div>
+                <h4 className="my-1 text-[1rem] leading-snug">{e.qualification}</h4>
+                <p className="text-[0.88rem] text-muted">{e.institution}</p>
+                <p className="mt-1 text-[0.88rem] font-medium text-strong">{e.achievement}</p>
               </div>
             ))}
           </div>

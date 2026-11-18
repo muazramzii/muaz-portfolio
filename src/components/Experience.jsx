@@ -34,7 +34,8 @@ export default function Experience() {
                     </div>
                     <div className="whitespace-nowrap font-mono text-[0.74rem] text-muted">{job.when}</div>
                   </div>
-                  <ul className="mt-3.5 list-disc pl-[18px] text-[0.94rem] text-muted marker:text-[var(--accent)]">
+                  {job.summary && <p className="mt-3.5 text-[0.94rem] text-muted">{job.summary}</p>}
+                  <ul className={`${job.summary ? 'mt-2.5' : 'mt-3.5'} list-disc pl-[18px] text-[0.94rem] text-muted marker:text-[var(--accent)]`}>
                     {job.points.map((p, k) => <li key={k} className="mb-1.5">{p}</li>)}
                   </ul>
                 </div>
