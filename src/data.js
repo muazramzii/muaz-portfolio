@@ -380,9 +380,8 @@ export const projects = [
       },
     ],
     role: 'Solo project. I defined the requirements and blueprint, directed an AI-assisted build (Claude Code), and tested it on real-world YouTube content, reporting the bugs that led to the matching and sync improvements.',
-    note: 'Private repository · no live demo',
     live: '',
-    repo: '',
+    repo: 'https://github.com/muazramzii/lyricsdock',
   },
 ]
 
