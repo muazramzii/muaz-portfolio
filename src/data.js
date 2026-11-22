@@ -163,6 +163,8 @@ export const projects = [
     label: 'NS',
     cats: ['ai', 'web'],
     catLabel: 'AI / ML · Web',
+    img: '/projects/nutriscan/logo.jpg',
+    imgPosition: 'center 52%',
     title: 'NutriScan Clinical',
     short: 'Hospital meal-monitoring tool with AI food recognition via GPT-4o vision.',
     desc: 'A meal-monitoring system for hospital wards with three roles (Nurse, Dietitian, Admin). Nurses photograph a meal tray, GPT-4o vision recognises the food and estimates portions, and dietitians follow intake over time through dashboards and low-intake alerts.',
