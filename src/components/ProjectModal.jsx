@@ -67,6 +67,26 @@ export default function ProjectModal({ project, onClose }) {
                 ))}
               </ul>
 
+              {project.sections?.map((s) => (
+                <div key={s.heading}>
+                  <h4 className="mb-3 mt-6 font-mono text-[0.76rem] uppercase tracking-[0.12em]" style={{ color: 'var(--text)' }}>{s.heading}</h4>
+                  <ul className="grid gap-2.5">
+                    {s.items.map((item, i) => (
+                      <li key={i} className="flex gap-2.5 text-[0.94rem] text-muted">
+                        <Check size={18} className="mt-0.5 shrink-0 text-accent" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+
+              {project.role && (
+                <>
+                  <h4 className="mb-3 mt-6 font-mono text-[0.76rem] uppercase tracking-[0.12em]" style={{ color: 'var(--text)' }}>My role</h4>
+                  <p className="text-[0.94rem] text-muted">{project.role}</p>
+                </>
+              )}
+
               <h4 className="mb-3 mt-6 font-mono text-[0.76rem] uppercase tracking-[0.12em]" style={{ color: 'var(--text)' }}>Tech stack</h4>
               <div className="flex flex-wrap gap-1.5">
                 {project.tech.map((t) => (
@@ -84,7 +104,7 @@ export default function ProjectModal({ project, onClose }) {
                   <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">View code</a>
                 )}
                 {!project.live && !project.repo && (
-                  <span className="font-mono text-[0.8rem] text-muted">Private / academic repository</span>
+                  <span className="font-mono text-[0.8rem] text-muted">{project.note || 'Private / academic repository'}</span>
                 )}
               </div>
             </div>
