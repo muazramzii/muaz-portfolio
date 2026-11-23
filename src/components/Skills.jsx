@@ -14,7 +14,7 @@ export default function Skills() {
           <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Technologies I've used in my projects and studies, grouped by area.</p></Reveal>
         </div>
 
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_380px]">
+        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.75fr)] lg:gap-10">
         <div className="grid gap-[18px] sm:grid-cols-2">
           {skills.map((cat, i) => {
             const Icon = ICONS[cat.icon] || Code2
@@ -36,15 +36,17 @@ export default function Skills() {
           })}
         </div>
 
-        <Portrait
-          src="/images/profile/muaz-skills.png"
-          alt="Muaz Ramzi sitting in an armchair, working on a laptop"
-          width={920}
-          height={1063}
-          side="right"
-          className="w-full"
-          imgClassName="w-full max-w-[380px] lg:max-w-none"
-        />
+        <div className="lg:sticky lg:top-28">
+          <Portrait
+            src="/images/profile/muaz-skills.png"
+            alt="Muaz Ramzi sitting in an armchair, working on a laptop"
+            width={920}
+            height={1063}
+            side="right"
+            className="w-full"
+            imgClassName="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-none"
+          />
+        </div>
         </div>
       </div>
 

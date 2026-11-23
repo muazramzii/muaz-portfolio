@@ -18,7 +18,7 @@ export function Reveal({ children, delay = 0, y = 28, className = '', as = 'div'
 }
 
 // Transparent cut-out portrait over a soft accent glow; slides in slightly from its side
-export function Portrait({ src, alt, width, height, side = 'right', className = '', imgClassName = '' }) {
+export function Portrait({ src, alt, width, height, side = 'right', className = '', imgClassName = '', justify = 'justify-center' }) {
   const dx = side === 'left' ? -16 : 16
   return (
     <motion.figure
@@ -26,9 +26,13 @@ export function Portrait({ src, alt, width, height, side = 'right', className = 
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
-      className={`relative isolate mx-auto flex justify-center ${className}`}
+      className={`relative isolate mx-auto flex ${justify} ${className}`}
     >
-      <span aria-hidden="true" className="absolute inset-x-[6%] bottom-[6%] top-[16%] -z-10 rounded-full opacity-25 blur-3xl" style={{ background: 'var(--gradient)' }} />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 -inset-y-[4%] -z-10"
+        style={{ background: 'radial-gradient(closest-side, color-mix(in srgb, var(--accent) 20%, transparent), transparent 75%)' }}
+      />
       <img
         src={src}
         alt={alt}

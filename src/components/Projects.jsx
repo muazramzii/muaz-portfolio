@@ -21,8 +21,8 @@ export default function Projects() {
           <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">A mix of deployed apps, academic builds and personal projects. Click any card for the full breakdown.</p></Reveal>
         </div>
 
-        <div className="grid items-start gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[320px_minmax(0,1fr)]">
-        <div className="lg:sticky lg:top-28">
+        <div className="grid items-start gap-10 md:grid-cols-[190px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[minmax(0,0.6fr)_minmax(0,1fr)] lg:gap-10">
+        <div className="md:sticky md:top-28">
           <Portrait
             src="/images/profile/muaz-projects.png"
             alt="Muaz Ramzi in a navy blazer, pointing towards the projects"
@@ -30,7 +30,8 @@ export default function Projects() {
             height={1502}
             side="left"
             className="w-full"
-            imgClassName="w-auto max-h-[460px] lg:max-h-[min(calc(100vh-9rem),720px)]"
+            justify="justify-center md:justify-end"
+            imgClassName="w-auto max-h-[400px] md:max-h-[min(calc(100vh-9rem),620px)] lg:max-h-[min(calc(100vh-9rem),760px)]"
           />
         </div>
 
