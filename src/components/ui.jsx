@@ -17,8 +17,8 @@ export function Reveal({ children, delay = 0, y = 28, className = '', as = 'div'
   )
 }
 
-// Framed portrait with a soft accent glow; slides in slightly from its side
-export function Portrait({ src, alt, width, height, side = 'right', className = '' }) {
+// Transparent cut-out portrait over a soft accent glow; slides in slightly from its side
+export function Portrait({ src, alt, width, height, side = 'right', className = '', imgClassName = '' }) {
   const dx = side === 'left' ? -16 : 16
   return (
     <motion.figure
@@ -26,12 +26,19 @@ export function Portrait({ src, alt, width, height, side = 'right', className = 
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.8, ease: [0.22, 0.61, 0.36, 1] }}
-      className={`relative isolate mx-auto w-full ${className}`}
+      className={`relative isolate mx-auto flex justify-center ${className}`}
     >
-      <span aria-hidden="true" className="absolute -inset-3 -z-10 rounded-[30px] opacity-25 blur-2xl" style={{ background: 'var(--gradient)' }} />
-      <div className="overflow-hidden rounded-[22px]" style={{ background: 'var(--surface)', border: '1px solid var(--border-strong)' }}>
-        <img src={src} alt={alt} width={width} height={height} loading="lazy" decoding="async" className="block h-auto w-full" />
-      </div>
+      <span aria-hidden="true" className="absolute inset-x-[6%] bottom-[6%] top-[16%] -z-10 rounded-full opacity-25 blur-3xl" style={{ background: 'var(--gradient)' }} />
+      <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        loading="lazy"
+        decoding="async"
+        className={`block h-auto ${imgClassName}`}
+        style={{ filter: 'drop-shadow(0 20px 26px rgba(0, 0, 0, 0.22))' }}
+      />
     </motion.figure>
   )
 }

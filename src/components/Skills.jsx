@@ -37,12 +37,13 @@ export default function Skills() {
         </div>
 
         <Portrait
-          src="/images/profile/muaz-skills.webp"
+          src="/images/profile/muaz-skills.png"
           alt="Muaz Ramzi sitting in an armchair, working on a laptop"
-          width={1199}
-          height={1312}
+          width={920}
+          height={1063}
           side="right"
-          className="max-w-[360px] lg:max-w-none"
+          className="w-full"
+          imgClassName="w-full max-w-[380px] lg:max-w-none"
         />
         </div>
       </div>

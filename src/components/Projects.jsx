@@ -24,12 +24,13 @@ export default function Projects() {
         <div className="grid items-start gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[320px_minmax(0,1fr)]">
         <div className="lg:sticky lg:top-28">
           <Portrait
-            src="/images/profile/muaz-projects.webp"
+            src="/images/profile/muaz-projects.png"
             alt="Muaz Ramzi in a navy blazer, pointing towards the projects"
-            width={1024}
-            height={1536}
+            width={472}
+            height={1502}
             side="left"
-            className="max-w-[260px] lg:max-w-none"
+            className="w-full"
+            imgClassName="w-auto max-h-[460px] lg:max-h-[min(calc(100vh-9rem),720px)]"
           />
         </div>
 
