@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ExternalLink, ArrowRight } from 'lucide-react'
 import { Github } from './Brand.jsx'
 import { projects, filters } from '../data.js'
-import { Reveal, Thumb } from './ui.jsx'
+import { Reveal, Thumb, Portrait } from './ui.jsx'
 import ProjectModal from './ProjectModal.jsx'
 
 export default function Projects() {
@@ -21,6 +21,19 @@ export default function Projects() {
           <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">A mix of deployed apps, academic builds and personal projects. Click any card for the full breakdown.</p></Reveal>
         </div>
 
+        <div className="grid items-start gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[320px_minmax(0,1fr)]">
+        <div className="lg:sticky lg:top-28">
+          <Portrait
+            src="/images/profile/muaz-projects.webp"
+            alt="Muaz Ramzi in a navy blazer, pointing towards the projects"
+            width={1024}
+            height={1536}
+            side="left"
+            className="max-w-[260px] lg:max-w-none"
+          />
+        </div>
+
+        <div className="min-w-0">
         <Reveal delay={0.1}>
           <div className="mb-9 flex flex-wrap gap-2.5">
             {filters.map((f) => (
@@ -40,7 +53,7 @@ export default function Projects() {
           </div>
         </Reveal>
 
-        <motion.div layout className="grid gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div layout className="grid gap-[22px] sm:grid-cols-2">
           <AnimatePresence mode="popLayout">
             {visible.map((p, i) => (
               <motion.article
@@ -89,6 +102,8 @@ export default function Projects() {
             ))}
           </AnimatePresence>
         </motion.div>
+        </div>
+        </div>
       </div>
 
       <ProjectModal project={active} onClose={() => setActive(null)} />

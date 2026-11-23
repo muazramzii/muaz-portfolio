@@ -2,7 +2,7 @@ import { Code2, Server, Smartphone, Database, Wrench, BrainCircuit } from 'lucid
 
 const ICONS = { Code2, Server, Smartphone, Database, Wrench, BrainCircuit }
 import { skills, marquee } from '../data.js'
-import { Reveal } from './ui.jsx'
+import { Reveal, Portrait } from './ui.jsx'
 
 export default function Skills() {
   return (
@@ -14,7 +14,8 @@ export default function Skills() {
           <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">Technologies I've used in my projects and studies, grouped by area.</p></Reveal>
         </div>
 
-        <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_380px]">
+        <div className="grid gap-[18px] sm:grid-cols-2">
           {skills.map((cat, i) => {
             const Icon = ICONS[cat.icon] || Code2
             return (
@@ -33,6 +34,16 @@ export default function Skills() {
               </Reveal>
             )
           })}
+        </div>
+
+        <Portrait
+          src="/images/profile/muaz-skills.webp"
+          alt="Muaz Ramzi sitting in an armchair, working on a laptop"
+          width={1199}
+          height={1312}
+          side="right"
+          className="max-w-[360px] lg:max-w-none"
+        />
         </div>
       </div>
 
