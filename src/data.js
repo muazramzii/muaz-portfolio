@@ -25,9 +25,9 @@ export const profile = {
 }
 
 export const heroStats = [
-  { value: 5, suffix: '+', label: 'Projects built' },
-  { value: 3.34, decimals: 2, label: "CGPA " },
-  { value: 4, suffix: '', label: 'Live deployments' },
+  { value: 12, suffix: '+', label: 'Projects built' },
+  { value: 3, label: 'Development areas' },
+  { value: 1, label: 'Industry internship' },
 ]
 
 export const facts = [
