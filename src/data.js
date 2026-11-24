@@ -86,7 +86,7 @@ export const experience = [
     ],
   },
   {
-    title: 'Final Year Project - Solo Developer',
+    title: 'Final Year Project',
     company: 'ARAMS · UTHM FSKTM',
     when: '2025 – 2026',
     points: [
