@@ -75,6 +75,12 @@ export default function Projects() {
                   <span className="absolute left-3 top-3 rounded-md px-2.5 py-1 font-mono text-[0.68rem] tracking-wide" style={{ background: 'var(--glass)', backdropFilter: 'blur(8px)', border: '1px solid var(--border-strong)' }}>
                     {p.catLabel}
                   </span>
+                  {p.status && (
+                    <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 font-mono text-[0.68rem] tracking-wide text-accent" style={{ background: 'var(--glass)', backdropFilter: 'blur(8px)', border: '1px solid var(--accent)' }}>
+                      <span className="h-1.5 w-1.5 rounded-full" style={{ background: 'var(--accent)' }} />
+                      {p.status}
+                    </span>
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-[22px]">
                   <h3 className="text-[1.2rem]">{p.title}</h3>

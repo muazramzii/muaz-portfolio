@@ -263,6 +263,7 @@ export const projects = [
     label: 'HS',
     cats: ['mobile', 'ai'],
     catLabel: 'Mobile · AI',
+    status: 'In progress',
     title: 'Hear & Speak Together',
     short: 'Bilingual speech-learning app that scores children\'s pronunciation with a self-hosted engine.',
     desc: 'A Flutter mobile app paired with a Django REST API where children hear a target word, record themselves saying it, and get age-appropriate feedback. Speech recognition (self-hosted Whisper) and pronunciation scoring (a deterministic phonetic-feature engine, no paid API) both run server-side.',

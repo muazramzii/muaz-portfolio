@@ -55,6 +55,12 @@ export default function ProjectModal({ project, onClose }) {
 
             <div className="p-7">
               <span className="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-accent">{project.catLabel}</span>
+              {project.status && (
+                <span className="ml-3 inline-flex items-center gap-1.5 rounded-md px-2 py-0.5 font-mono text-[0.68rem] uppercase tracking-[0.08em] text-accent" style={{ background: 'color-mix(in srgb, var(--accent) 14%, transparent)' }}>
+                  <span className="h-1.5 w-1.5 rounded-full" style={{ background: 'var(--accent)' }} />
+                  {project.status}
+                </span>
+              )}
               <h3 className="mb-3 mt-2 text-[1.6rem]">{project.title}</h3>
               <p className="text-muted">{project.desc}</p>
 
