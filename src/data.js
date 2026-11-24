@@ -279,6 +279,7 @@ export const projects = [
   },
   {
     id: 'moverush',
+    status: 'In progress',
     label: 'MR',
     cats: [],
     catLabel: 'Game Development',
