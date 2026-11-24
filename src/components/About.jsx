@@ -60,7 +60,7 @@ export default function About() {
                 <div className="font-mono text-[0.72rem] tracking-wide text-accent">{e.period}</div>
                 <h4 className="my-1 text-[1rem] leading-snug">{e.qualification}</h4>
                 <p className="text-[0.88rem] text-muted">{e.institution}</p>
-                <p className="mt-1 text-[0.88rem] font-medium text-strong">{e.achievement}</p>
+                {e.achievement && <p className="mt-1 text-[0.88rem] font-medium text-strong">{e.achievement}</p>}
               </div>
             ))}
           </div>

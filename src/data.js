@@ -42,7 +42,7 @@ export const education = [
     period: '2024 – 2027 (Expected)',
     qualification: 'Bachelor of Information Technology (Honours)',
     institution: 'Universiti Tun Hussein Onn Malaysia (UTHM)',
-    achievement: 'CGPA: 3.34',
+    achievement: 'Second Upper Class',
     current: true,
   },
   {
