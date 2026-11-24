@@ -14,7 +14,7 @@ export default function Certifications() {
           <Reveal delay={0.1}><p className="mt-3.5 text-[1.05rem] text-muted">A few things I'm proud of from my studies and projects.</p></Reveal>
         </div>
 
-        <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-[18px] sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((c, i) => {
             const Icon = ICONS[c.icon] || Award
             return (

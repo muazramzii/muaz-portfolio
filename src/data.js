@@ -398,6 +398,5 @@ export const filters = [
 export const certifications = [
   { icon: 'Award', title: "Dean's List Recognition", issuer: 'UTHM · FSKTM', desc: 'Awarded for academic performance during the undergraduate programme.' },
   { icon: 'CheckCircle2', title: 'ARAMS Deployed', issuer: 'Live · arams.site', desc: 'Solo-built a full research monitoring system and deployed it to a live server.' },
-  { icon: 'BarChart3', title: 'CGPA 3.34', issuer: 'Bachelor of IT (Hons)', desc: 'Consistent academic standing across a full-stack and software engineering curriculum.' },
   { icon: 'Award', title: 'Diploma — First Class Honours', issuer: 'Politeknik Ungku Omar', desc: 'Completed the Diploma in Information Technology (Technology Digital) with First Class Honours.' },
 ]
